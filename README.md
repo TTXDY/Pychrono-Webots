@@ -47,7 +47,7 @@
 #### Driver's view
 <img src="./source/chrono2.jpg" alt="user" style="zoom:100%;" />
 
-### Video: see folder source terrainVideo.m4v
+### Video: see folder source terrainVideo.mov
 <video
 src="./source/terrainVideo.mov" controls=""
 height=400 

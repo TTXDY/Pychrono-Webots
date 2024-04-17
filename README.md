@@ -49,7 +49,7 @@
 
 ### Video: see folder source terrainVideo.m4v
 <video
-src="./source/terrainVideo.m4v" controls=""
+src="./source/terrainVideo.mov" controls=""
 height=400 
 width=600> 
 </video>

@@ -1,0 +1,68 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.004832345533170563 0.8648268934985541 0.5020469029067789 3.112813321982301
+  position 0.3684243293942038 49.84852608971587 -30.17365447299136
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 30 30
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+Robot {
+  controller "my_controller"
+  supervisor TRUE
+}
+Group {
+  children [
+    DEF Box1 WoodenBox {
+      translation 0.6703252523090084 0.1 0.5818282603054782
+      name "box1"
+    }
+    DEF Box2 WoodenBox {
+      translation -0.8747885280703308 0.1 0.8417906269453981
+      name "box2"
+    }
+    DEF Box3 WoodenBox {
+      translation -0.9499616018382008 0.1 -0.5406059725483535
+      name "box3"
+    }
+    DEF Box4 WoodenBox {
+      translation -1.2050931103665359 0.1 -1.4224187344075612
+      name "box4"
+    }
+    DEF Box5 WoodenBox {
+      translation 0.8910167859943898 0.1 1.0202689610108342
+      name "box5"
+    }
+    DEF Box6 WoodenBox {
+      translation -1.1280188645645066 0.1 -1.26276075041045
+      name "box6"
+    }
+    DEF Box7 WoodenBox {
+      translation 0.6198465880091317 0.1 0.7638115244833867
+      name "box7"
+    }
+    DEF Box8 WoodenBox {
+      translation -0.6097213398396777 0.1 0.7535793773845765
+      name "box8"
+    }
+    DEF Box9 WoodenBox {
+      translation 1.139176397341288 0.1 -1.2719127170082598
+      name "box9"
+    }
+    DEF Box10 WoodenBox {
+      translation 1.1417919223188258 0.1 -0.9902472263476043
+      name "box10"
+    }
+  ]
+}

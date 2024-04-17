@@ -1,0 +1,93 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.9992761582298241 -0.03729940131533911 0.007477583497410146 0.410933527317561
+  position 3.3915527778622954 14.634937889174251 29.45729336981553
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 40 40
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+Robot {
+  controller "my_controller"
+  supervisor TRUE
+}
+DEF Base Solid {
+  translation 0 1 0
+  children [
+    Group {
+      children [
+        DEF On Transform {
+          translation 1.3622862642876292 0.6556606984580445 0
+          rotation 0 0 1 0.44857142857142857
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry DEF on_box Box {
+                size 3.023716135730492 0.14187891002440822 4.165265952295399
+              }
+            }
+          ]
+        }
+        DEF Plane Transform {
+          translation 4.960575350924478 1.3090572005325485 0
+          rotation 0 0 1 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry DEF plane_box Box {
+                size 4.510636748554159 0.14187891002440822 4.165265952295399
+              }
+            }
+          ]
+        }
+        DEF Down Transform {
+          translation 8.998983489242825 0.6556606984580445 0
+          rotation 0 0 1 -0.3488888888888889
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry DEF down_box Box {
+                size 3.835912342343739 0.14187891002440822 4.165265952295399
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.7971742707232683 -0.5864344534380285 -0.1435542194352568 0.47638064653740436
+  position -5.740807615284846 11.7714649846499 30.188352639693267
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 40 40
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+Robot {
+  controller "my_controller"
+  supervisor TRUE
+}
+DEF Base Solid {
+  children [
+    Group {
+      children [
+        DEF Stair1 Transform {
+          translation 0.9510500849543051 0.06142225912245713 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 1.9021001699086102 0.12284451824491426 8.458131936769089
+              }
+            }
+          ]
+        }
+        DEF Stair2 Transform {
+          translation 2.853150254862915 0.12284451824491426 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 1.9021001699086102 0.2456890364898285 8.458131936769089
+              }
+            }
+          ]
+        }
+        DEF Stair3 Transform {
+          translation 4.755250424771526 0.18426677736737138 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 1.9021001699086102 0.36853355473474275 8.458131936769089
+              }
+            }
+          ]
+        }
+        DEF Stair4 Transform {
+          translation 6.6573505946801355 0.2456890364898285 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 1.9021001699086102 0.491378072979657 8.458131936769089
+              }
+            }
+          ]
+        }
+        DEF Stair5 Transform {
+          translation 8.559450764588746 0.18426677736737138 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 1.9021001699086102 0.36853355473474275 8.458131936769089
+              }
+            }
+          ]
+        }
+        DEF Stair6 Transform {
+          translation 10.461550934497357 0.12284451824491426 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 1.9021001699086102 0.2456890364898285 8.458131936769089
+              }
+            }
+          ]
+        }
+        DEF Stair7 Transform {
+          translation 12.363651104405966 0.06142225912245713 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 1.9021001699086102 0.12284451824491426 8.458131936769089
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

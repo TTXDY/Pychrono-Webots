@@ -1,0 +1,166 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.7316381940438285 0.6265195389860904 0.2686611625913614 5.27668841881885
+  position -17.038355149714125 36.101962946483944 27.366016453148237
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 40 40
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+Robot {
+  controller "my_controller"
+  supervisor TRUE
+}
+DEF Base Solid {
+  translation -7.92721 0 0.885534
+  children [
+    Group {
+      children [
+        DEF Ditch1 Transform {
+          translation 0.2922777091406339 0.026643254472632515 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.5845554182812678 0.05328650894526503 8.426799091838987
+              }
+            }
+          ]
+        }
+        DEF Ditch2 Transform {
+          translation 1.8535298005193699 0.026643254472632515 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.5845554182812678 0.05328650894526503 8.426799091838987
+              }
+            }
+          ]
+        }
+        DEF Ditch3 Transform {
+          translation 3.414781891898106 0.026643254472632515 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.5845554182812678 0.05328650894526503 8.426799091838987
+              }
+            }
+          ]
+        }
+        DEF Ditch4 Transform {
+          translation 4.976033983276841 0.026643254472632515 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.5845554182812678 0.05328650894526503 8.426799091838987
+              }
+            }
+          ]
+        }
+        DEF Ditch5 Transform {
+          translation 6.537286074655578 0.026643254472632515 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.5845554182812678 0.05328650894526503 8.426799091838987
+              }
+            }
+          ]
+        }
+        DEF Ditch6 Transform {
+          translation 8.098538166034315 0.026643254472632515 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.5845554182812678 0.05328650894526503 8.426799091838987
+              }
+            }
+          ]
+        }
+        DEF Ditch7 Transform {
+          translation 9.65979025741305 0.026643254472632515 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "textures/damp_sand_disp_4k.png"
+                  ]
+                }
+                roughness 0.2
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.5845554182812678 0.05328650894526503 8.426799091838987
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

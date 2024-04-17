@@ -1,0 +1,50 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.011007591930885893 0.9738634415370222 0.22686742859553477 3.900343196250494
+  position -85.39510799873065 45.18472525499421 -72.13772409672991
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.14 0 0
+  floorSize 40 40
+  floorTileSize 1 1
+}
+Robot {
+  controller "<extern>"
+  supervisor TRUE
+}
+DEF terrain_3Dmodel Solid {
+  translation 1.7791 0.10000000000000178 6.31964
+  rotation 1 0 0 -1.5707953071795862
+  children [
+    DEF terrain_shape Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.8 0.8
+        baseColorMap ImageTexture {
+          url [
+            "textures/damp_sand_disp_4k.png"
+          ]
+        }
+        roughness 0.8
+        metalness 0.8
+      }
+      geometry Mesh {
+        url [
+          "cottage/cottage.obj"
+        ]
+      }
+    }
+  ]
+  boundingObject USE terrain_shape
+}
+Shrimp {
+  translation 7.371 0.5 -3.63546
+  supervisor TRUE
+}

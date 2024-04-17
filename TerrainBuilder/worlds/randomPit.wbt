@@ -1,0 +1,45 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.9910800024868378 -0.11929457838517483 -0.05940734162199772 0.39746359440238044
+  position 0.227843247122118 15.620660359165077 38.474969172275905
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 2.50817 0 2.77345
+  floorSize 40 40
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+Robot {
+  controller "my_controller"
+  supervisor TRUE
+}
+DEF Base Solid {
+  translation 2.96083 -1.84741e-13 2.86782
+  children [
+    DEF Pit Pit {
+      size 17 3 11
+      xDimension 24
+      zDimension 17
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/damp_sand_disp_4k.png"
+          ]
+        }
+        roughness 0.5
+        metalness 0.8
+      }
+      randomSeed 3
+    }
+  ]
+}
